@@ -16,9 +16,12 @@
         type="image/x-icon">
     <link rel="icon" href="https://listimg.pinclipart.com/picdir/s/93-931657_93-nautical-star-tattoo-green-clipart.png"
         type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="../static/custom.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
 </head>
 
-<body style="background-color: aliceblue">
+<body class="bg-custom">
     <div style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);">
         Similarity: <h2>{{ cmp_res }} ({{ percent }}%) </h2>
 
